@@ -5,10 +5,7 @@ const nextBtn = document.querySelector('.nextBtn');
 const scoreCard = document.querySelector('.scoreCard');
 const alert = document.querySelector('.alert');
 const startBtn = document.querySelector('.startBtn');
-
-
-
-// Make an array of objects that stores question, choices of question and answer
+// Make an array of objects that stores question.
 const quiz = [
     {
         question: "Q.What year was Javascript launched?",
