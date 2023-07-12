@@ -83,9 +83,10 @@ const showScore = () => {
 }
 // Function to Show Alert
 const displayAlert = (msg) => {
-    // alert.style.display = "block";
+    alert.style.display = "block";
     alert.textContent = msg;
     setTimeout(()=>{
+        alert.style.display = "none";
         }, 2000);
 }
 // random question throw.
@@ -110,7 +111,7 @@ startBtn.addEventListener('click', ()=>{
 function handleClick() {
     const selectedChoice = document.querySelector('.choice.selected');
     if (!selectedChoice && nextBtn.textContent === "Submit") {
-        alert("Select your answer");
+        // console.log("Select your answer");
         displayAlert("Select your answer");
         return;
     }
@@ -126,5 +127,3 @@ function handleClick() {
     }
 }
 nextBtn.addEventListener('click', handleClick);
-
-
